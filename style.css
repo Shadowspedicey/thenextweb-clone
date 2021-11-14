@@ -1,0 +1,267 @@
+/* 
+	Generalized styles
+*/
+
+*
+{
+	font-family: "Titillium Web", serif !important;
+}
+
+body
+{
+	padding-top: 50px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+
+/* 
+	Main
+*/
+
+#nav-header
+{
+	background-color: #F7F8F8;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999999;
+
+	padding: 0 1rem;
+	box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.25);
+}
+
+#nav-header > h1 svg
+{
+	width: 60px;
+	height: auto;
+}
+
+#nav-header ul
+{
+	display: flex;
+}
+
+#nav-header  li a
+{
+	width: 100%;
+	display: inline-block;
+	color: black;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+#nav-header  li a:hover
+{
+	background-color: white;
+}
+
+#home
+{
+	background-color: white;
+}
+
+main > header
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 5rem 0;
+}
+main > header svg
+{
+	width: 300px;
+}
+main > header span
+{
+	font-size: 2em;
+}
+
+/* 
+	The showcase at the top of the page
+*/
+
+#articles-showcase
+{
+	height: 1000px;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 30px 1fr 1fr;
+	gap: 15px;
+
+	margin: 0 175px;
+}
+#articles-showcase article:nth-child(1)
+{
+	grid-area: 1 / 1 / 3 / 3;
+}
+#articles-showcase article:nth-child(2)
+{
+	grid-area: 1 / 3 / 2 / 4;
+}
+#articles-showcase article:nth-child(3)
+{
+	grid-area: 1 / 4 / 2 / 5;
+}
+
+#articles-showcase article:nth-child(4)
+{
+	grid-area: 3 / 1 / 5 / 3;
+}
+
+#articles-showcase article:nth-child(5)
+{
+	grid-area: 2 / 3 / 5 / 5;
+}
+
+/* 
+	Showcase grid items
+*/
+
+#articles-showcase article
+{
+	background-color: gray;
+	overflow: hidden;
+	position: relative;
+}
+
+#articles-showcase a
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#articles-showcase article header
+{
+	color: white;
+
+	position: absolute;
+	left: 1.5rem;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	z-index: 999;
+}
+#articles-showcase article h1
+{
+	font-size: 2.5em;
+	font-weight: bold;
+}
+#articles-showcase article h2
+{
+	text-transform: uppercase;
+	font-weight: 200;
+}
+#articles-showcase article img
+{
+	width: auto;
+	max-width: initial;
+	height: 105%;
+	transition: height 0.25s ease-in-out;
+}
+#articles-showcase article .shadow
+{
+	background: linear-gradient(to top, black, transparent);
+	pointer-events: none;
+	position: absolute;
+	bottom: 0;
+	top: 50%;
+	left: 0;
+	right: 0;
+}
+#articles-showcase article:hover img
+{
+	height: 102.5%;
+}
+
+#articles-showcase article:nth-child(2) h1,
+#articles-showcase article:nth-child(3) h1
+{
+	font-size: 1.25em;
+}
+#articles-showcase article:nth-child(4) header
+{
+	white-space: pre-line;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 2rem;
+	left: 2rem;
+	bottom: initial;
+	text-align: center;
+}
+#articles-showcase article:nth-child(4) h1
+{
+	font-size: 2em;
+}
+
+/* 
+	Popular articles section
+*/
+
+#popular-articles
+{
+	background-color: #F7F8F8;
+	padding: 4rem 10%;
+}
+
+#popular-articles h3
+{
+	color: #a7aab2;
+	font-weight: bold;
+	font-family: "Montserrat", serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#popular-articles ul
+{
+	display: flex;
+	gap: 1rem;
+}
+
+#popular-articles li
+{
+	display: flex;
+	
+	flex: 1;
+}
+#popular-articles li .index
+{
+	color: #c09;
+	font-size: 2em;
+	font-weight: 600;
+	margin-right: 7.5px;
+}
+#popular-articles li a
+{
+	color: black;
+	transition: text-decoration 0.25s ease-in-out;
+	text-decoration-color: transparent;
+	font-size: 1.125em;
+	font-weight: 600;
+	line-height: 1.5em;
+}
+#popular-articles li a:hover
+{
+	text-decoration: underline;
+	text-decoration-color: rgba(204, 0, 153, 0.5);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+}
