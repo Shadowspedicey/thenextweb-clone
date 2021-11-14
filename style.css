@@ -380,3 +380,69 @@ main > header span
 	font-weight: 600;
 	text-align: center;
 }
+
+/* 
+	Newsletter section
+*/
+
+#newsletter-divider
+{
+	height: 360px;
+	background: url(https://next.tnwcdn.com/assets/next/img/spacesbg.png), black;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50%;
+	color: white;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	
+	padding: 5rem 0;
+	margin-bottom: 1000px;
+}
+
+#newsletter-divider h2
+{
+	font-size: 4em;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+
+#newsletter-divider p
+{
+	font-size: 1.125em;
+}
+
+#newsletter-divider a
+{
+	color: #0cc;
+}
+#newsletter-divider a:hover
+{
+	color: white;
+}
+
+#newsletter-divider input[type="email"]
+{
+	width: 800px;
+	padding: 0.75rem 0.5rem;
+	outline: none;
+}
+
+#newsletter-divider button
+{
+	height: 100%;
+	background-color: #c09;
+	color: white;
+	font-size: 1.125em;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0 0.5rem;
+	border: none;
+}
+#newsletter-divider button:hover
+{
+	background-color: #4cacff;
+}
