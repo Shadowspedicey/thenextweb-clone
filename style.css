@@ -324,3 +324,59 @@ main > header span
 {
 	border: 1px solid rgba(0, 0, 0, 0.5);
 }
+
+/* 
+	Explore our channels section
+*/
+
+#explore-channels
+{
+	background-color: #F7F8F8;
+	padding: 7.5rem 175px;
+}
+
+#explore-channels h3
+{
+	font-size: 2.25em;
+	font-weight: 700;
+	margin-bottom: 3.5rem;
+}
+
+#explore-channels > .container
+{
+	display: flex;
+	gap: 1rem;
+}
+
+#explore-channels a
+{
+	flex: 1;
+}
+
+#explore-channels article
+{
+	height: 232px;
+	background: black;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+	padding: 2rem 1rem;
+}
+#explore-channels article img
+{
+	width: 50%;
+	height: auto;
+}
+#explore-channels article h4
+{
+	color: white;
+	font-size: 1.125em;
+	font-weight: 600;
+	text-align: center;
+}
